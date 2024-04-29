@@ -11,6 +11,7 @@ struct LandingPage: View {
     
     @State private var userInput: String = ""
     @State var isPresentingPosts: Bool = false
+    @State var count: Int = 0
     
     var body: some View {
         NavigationView {
@@ -27,6 +28,7 @@ struct LandingPage: View {
                         if userInput.isEmpty {
                             
                         } else {
+                            count = Int(userInput) ?? 0
                             isPresentingPosts.toggle()
                         }
                     }) {
@@ -36,7 +38,7 @@ struct LandingPage: View {
             }
         }
         .fullScreenCover(isPresented: $isPresentingPosts, content: {
-            Posts(bactoLandingPage: $isPresentingPosts, pageLimit: userInput)
+            Posts(bactoLandingPage: $isPresentingPosts, postCount: $count)
         })
     }
     

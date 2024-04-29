@@ -14,7 +14,7 @@ struct MyDataBackButton: View {
     var body: some View {
         Image(systemName: title)
             .resizable()
-            .frame(width: 50, height: 40)
+            .frame(width: 25, height: 20)
             .foregroundColor(.textColour)
     }
     

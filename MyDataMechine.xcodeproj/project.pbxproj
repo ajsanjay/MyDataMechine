@@ -20,6 +20,15 @@
 		8D72D3862BDFEC5600A3D1F6 /* MyDataTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3852BDFEC5600A3D1F6 /* MyDataTextField.swift */; };
 		8D72D38E2BDFF02F00A3D1F6 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D38D2BDFF02F00A3D1F6 /* Posts.swift */; };
 		8D72D3902BDFF09900A3D1F6 /* MyDataBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D38F2BDFF09900A3D1F6 /* MyDataBackButton.swift */; };
+		8D72D3922BE0081900A3D1F6 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3912BE0081900A3D1F6 /* PostsViewModel.swift */; };
+		8D72D3952BE0095D00A3D1F6 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3942BE0095D00A3D1F6 /* PostCell.swift */; };
+		8D72D3972BE00BCE00A3D1F6 /* MyDataTitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3962BE00BCE00A3D1F6 /* MyDataTitleText.swift */; };
+		8D72D3992BE00FDD00A3D1F6 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3982BE00FDD00A3D1F6 /* Loader.swift */; };
+		8D72D39C2BE010FD00A3D1F6 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D39B2BE010FD00A3D1F6 /* MockData.swift */; };
+		8D72D3A02BE0124A00A3D1F6 /* CellBG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D39F2BE0124A00A3D1F6 /* CellBG.swift */; };
+		8D72D3A22BE013A100A3D1F6 /* MyDataCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3A12BE013A100A3D1F6 /* MyDataCellText.swift */; };
+		8D72D3A52BE016AC00A3D1F6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3A42BE016AC00A3D1F6 /* Constants.swift */; };
+		8D72D3A72BE0178800A3D1F6 /* MyDataCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3A62BE0178800A3D1F6 /* MyDataCellContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +46,15 @@
 		8D72D3852BDFEC5600A3D1F6 /* MyDataTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataTextField.swift; sourceTree = "<group>"; };
 		8D72D38D2BDFF02F00A3D1F6 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		8D72D38F2BDFF09900A3D1F6 /* MyDataBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataBackButton.swift; sourceTree = "<group>"; };
+		8D72D3912BE0081900A3D1F6 /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		8D72D3942BE0095D00A3D1F6 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		8D72D3962BE00BCE00A3D1F6 /* MyDataTitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataTitleText.swift; sourceTree = "<group>"; };
+		8D72D3982BE00FDD00A3D1F6 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		8D72D39B2BE010FD00A3D1F6 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		8D72D39F2BE0124A00A3D1F6 /* CellBG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellBG.swift; sourceTree = "<group>"; };
+		8D72D3A12BE013A100A3D1F6 /* MyDataCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataCellText.swift; sourceTree = "<group>"; };
+		8D72D3A42BE016AC00A3D1F6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8D72D3A62BE0178800A3D1F6 /* MyDataCellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataCellContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +87,8 @@
 		8D72D3642BDFDF0C00A3D1F6 /* MyDataMechine */ = {
 			isa = PBXGroup;
 			children = (
+				8D72D3A32BE0169F00A3D1F6 /* Utilities */,
+				8D72D39A2BE010ED00A3D1F6 /* MockData */,
 				8D72D3762BDFE4D600A3D1F6 /* Views */,
 				8D72D3732BDFE05400A3D1F6 /* Model */,
 				8D72D3652BDFDF0C00A3D1F6 /* MyDataMechineApp.swift */,
@@ -104,6 +124,8 @@
 				8D72D3802BDFE82000A3D1F6 /* ButtonStyle */,
 				8D72D37D2BDFE76900A3D1F6 /* TextViews */,
 				8D72D3772BDFE4E200A3D1F6 /* BackGround.swift */,
+				8D72D39F2BE0124A00A3D1F6 /* CellBG.swift */,
+				8D72D3982BE00FDD00A3D1F6 /* Loader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,6 +135,9 @@
 			children = (
 				8D72D3792BDFE5D100A3D1F6 /* MYDataHeadingText.swift */,
 				8D72D37E2BDFE79A00A3D1F6 /* MyDataHintText.swift */,
+				8D72D3962BE00BCE00A3D1F6 /* MyDataTitleText.swift */,
+				8D72D3A62BE0178800A3D1F6 /* MyDataCellContent.swift */,
+				8D72D3A12BE013A100A3D1F6 /* MyDataCellText.swift */,
 			);
 			path = TextViews;
 			sourceTree = "<group>";
@@ -145,9 +170,35 @@
 		8D72D38C2BDFF02100A3D1F6 /* Posts */ = {
 			isa = PBXGroup;
 			children = (
+				8D72D3912BE0081900A3D1F6 /* PostsViewModel.swift */,
 				8D72D38D2BDFF02F00A3D1F6 /* Posts.swift */,
+				8D72D3932BE0094A00A3D1F6 /* PostsCell */,
 			);
 			path = Posts;
+			sourceTree = "<group>";
+		};
+		8D72D3932BE0094A00A3D1F6 /* PostsCell */ = {
+			isa = PBXGroup;
+			children = (
+				8D72D3942BE0095D00A3D1F6 /* PostCell.swift */,
+			);
+			path = PostsCell;
+			sourceTree = "<group>";
+		};
+		8D72D39A2BE010ED00A3D1F6 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				8D72D39B2BE010FD00A3D1F6 /* MockData.swift */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		8D72D3A32BE0169F00A3D1F6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8D72D3A42BE016AC00A3D1F6 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,16 +272,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D72D3752BDFE06200A3D1F6 /* Model.swift in Sources */,
+				8D72D3A52BE016AC00A3D1F6 /* Constants.swift in Sources */,
 				8D72D3832BDFE85000A3D1F6 /* MyDataButton.swift in Sources */,
+				8D72D3952BE0095D00A3D1F6 /* PostCell.swift in Sources */,
 				8D72D3862BDFEC5600A3D1F6 /* MyDataTextField.swift in Sources */,
 				8D72D3902BDFF09900A3D1F6 /* MyDataBackButton.swift in Sources */,
 				8D72D37C2BDFE6D900A3D1F6 /* DisplayIcon.swift in Sources */,
 				8D72D37F2BDFE79A00A3D1F6 /* MyDataHintText.swift in Sources */,
 				8D72D3682BDFDF0C00A3D1F6 /* LandingPage.swift in Sources */,
+				8D72D3A22BE013A100A3D1F6 /* MyDataCellText.swift in Sources */,
 				8D72D3662BDFDF0C00A3D1F6 /* MyDataMechineApp.swift in Sources */,
+				8D72D3972BE00BCE00A3D1F6 /* MyDataTitleText.swift in Sources */,
+				8D72D3922BE0081900A3D1F6 /* PostsViewModel.swift in Sources */,
 				8D72D38E2BDFF02F00A3D1F6 /* Posts.swift in Sources */,
 				8D72D3782BDFE4E300A3D1F6 /* BackGround.swift in Sources */,
+				8D72D39C2BE010FD00A3D1F6 /* MockData.swift in Sources */,
+				8D72D3A02BE0124A00A3D1F6 /* CellBG.swift in Sources */,
 				8D72D37A2BDFE5D100A3D1F6 /* MYDataHeadingText.swift in Sources */,
+				8D72D3A72BE0178800A3D1F6 /* MyDataCellContent.swift in Sources */,
+				8D72D3992BE00FDD00A3D1F6 /* Loader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
