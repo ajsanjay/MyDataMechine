@@ -29,7 +29,7 @@ struct LandingPage: View {
                     Button(action: {
                         if userInput.isEmpty {
                             alertItem = AlertContext.PageCountEmpty
-                        } else if userInput == "1" {
+                        } else if Int(userInput) ?? 0 < 1 {
                             alertItem = AlertContext.PageCountGreaterthan1
                         } else {
                             count = Int(userInput) ?? 0
