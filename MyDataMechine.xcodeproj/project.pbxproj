@@ -29,6 +29,7 @@
 		8D72D3A22BE013A100A3D1F6 /* MyDataCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3A12BE013A100A3D1F6 /* MyDataCellText.swift */; };
 		8D72D3A52BE016AC00A3D1F6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3A42BE016AC00A3D1F6 /* Constants.swift */; };
 		8D72D3A72BE0178800A3D1F6 /* MyDataCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3A62BE0178800A3D1F6 /* MyDataCellContent.swift */; };
+		8D72D3A92BE02EFF00A3D1F6 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3A82BE02EFF00A3D1F6 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		8D72D3A12BE013A100A3D1F6 /* MyDataCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataCellText.swift; sourceTree = "<group>"; };
 		8D72D3A42BE016AC00A3D1F6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8D72D3A62BE0178800A3D1F6 /* MyDataCellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataCellContent.swift; sourceTree = "<group>"; };
+		8D72D3A82BE02EFF00A3D1F6 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				8D72D3A42BE016AC00A3D1F6 /* Constants.swift */,
+				8D72D3A82BE02EFF00A3D1F6 /* Alert.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				8D72D3952BE0095D00A3D1F6 /* PostCell.swift in Sources */,
 				8D72D3862BDFEC5600A3D1F6 /* MyDataTextField.swift in Sources */,
 				8D72D3902BDFF09900A3D1F6 /* MyDataBackButton.swift in Sources */,
+				8D72D3A92BE02EFF00A3D1F6 /* Alert.swift in Sources */,
 				8D72D37C2BDFE6D900A3D1F6 /* DisplayIcon.swift in Sources */,
 				8D72D37F2BDFE79A00A3D1F6 /* MyDataHintText.swift in Sources */,
 				8D72D3682BDFDF0C00A3D1F6 /* LandingPage.swift in Sources */,

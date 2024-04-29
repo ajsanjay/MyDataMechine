@@ -14,7 +14,9 @@ class PostsViewModel: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var error: Error?
     @Published var isList: Bool = false
-    let columns: [GridItem] = [GridItem(.flexible()),GridItem(.flexible())]
+    @Published var alertItem: AlertItem?
+    @Published var postCount: Int = 0
+    let columns: [GridItem] = [GridItem(.flexible(), spacing: 10),GridItem(.flexible(), spacing: 10)]
 
     func fetchPosts() {
         isLoading = true
@@ -26,6 +28,9 @@ class PostsViewModel: ObservableObject {
                 } else if let data = data {
                     do {
                         self.posts = try JSONDecoder().decode([Post].self, from: data)
+                        if self.postCount > self.posts.count {
+                            self.alertItem = AlertContext.PageCountGreatergreaterThanTotal
+                        }
                     } catch {
                         self.error = error
                     }

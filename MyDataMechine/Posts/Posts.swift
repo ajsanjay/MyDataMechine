@@ -11,7 +11,7 @@ struct Posts: View {
     
     @StateObject var viewModel = PostsViewModel()
     @Binding var bactoLandingPage: Bool
-    @Binding var postCount: Int
+    @Binding var getCount: Int
     @State private var increaseBy: Int = 0
     
     var body: some View {
@@ -28,7 +28,7 @@ struct Posts: View {
                             MyDataBackButton(title: "arrow.backward")
                         }
                         .padding(.leading, 4)
-                        MyDataTitleText(hint: "Displaying Post of \(viewModel.posts.count < postCount ? viewModel.posts.count : postCount) out of \(viewModel.posts.count)")
+                        MyDataTitleText(hint: "Displaying Post of \(viewModel.posts.count < viewModel.postCount ? viewModel.posts.count : viewModel.postCount) out of \(viewModel.posts.count)")
                             .padding()
                         Button(action: {
                             viewModel.isList.toggle()
@@ -39,7 +39,7 @@ struct Posts: View {
                     }
                     .padding(.top, -20)
                     if viewModel.isList {
-                        List(viewModel.posts.prefix(postCount), id: \.id) { post in
+                        List(viewModel.posts.prefix(viewModel.postCount), id: \.id) { post in
                             PostCell(data: post, isList: viewModel.isList)
                         }
                         .listStyle(PlainListStyle())
@@ -48,9 +48,10 @@ struct Posts: View {
                     } else {
                         ScrollView {
                             LazyVGrid(columns: viewModel.columns) {
-                                ForEach(viewModel.posts.prefix(postCount), id: \.id) { post in
+                                ForEach(viewModel.posts.prefix(viewModel.postCount), id: \.id) { post in
                                     PostCell(data: post, isList: viewModel.isList)
                                         .frame(height: screenHeight * 0.3)
+                                        .aspectRatio(1.5, contentMode: .fit)
                                 }
                             }
                             .padding(.leading, 10)
@@ -58,26 +59,33 @@ struct Posts: View {
                         }
                         .padding(.top, -20)
                     }
-                    Button (action: {
-                        postCount += increaseBy
-                        if postCount > viewModel.posts.count {
-                            postCount = viewModel.posts.count
+                    if !(viewModel.postCount == viewModel.posts.count) {
+                        Button (action: {
+                            viewModel.postCount += increaseBy
+                            if viewModel.postCount > viewModel.posts.count {
+                                viewModel.postCount = viewModel.posts.count
+                            }
+                        }) {
+                            MyDataButton(title: "Load More")
+                                .padding(.bottom, -6)
                         }
-                    }) {
-                        MyDataButton(title: "Load More")
-                            .padding(.bottom, -6)
                     }
+                    
                 }
             }
         }
         .onAppear() {
-            increaseBy = postCount
+            increaseBy = getCount
+            viewModel.postCount = getCount
             viewModel.fetchPosts()
+        }
+        .alert(item: $viewModel.alertItem) { alertItem in
+            Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
         }
     }
     
 }
 
 #Preview {
-    Posts(bactoLandingPage: .constant(true), postCount: .constant(20))
+    Posts(bactoLandingPage: .constant(true), getCount: .constant(20))
 }

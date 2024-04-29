@@ -12,6 +12,8 @@ struct LandingPage: View {
     @State private var userInput: String = ""
     @State var isPresentingPosts: Bool = false
     @State var count: Int = 0
+    @State var alertItem: AlertItem?
+    @State private var isKeyboardHidden: Bool = true
     
     var body: some View {
         NavigationView {
@@ -26,7 +28,9 @@ struct LandingPage: View {
                         .padding()
                     Button(action: {
                         if userInput.isEmpty {
-                            
+                            alertItem = AlertContext.PageCountEmpty
+                        } else if userInput == "1" {
+                            alertItem = AlertContext.PageCountGreaterthan1
                         } else {
                             count = Int(userInput) ?? 0
                             isPresentingPosts.toggle()
@@ -38,8 +42,15 @@ struct LandingPage: View {
             }
         }
         .fullScreenCover(isPresented: $isPresentingPosts, content: {
-            Posts(bactoLandingPage: $isPresentingPosts, postCount: $count)
+            Posts(bactoLandingPage: $isPresentingPosts, getCount: $count)
         })
+        .alert(item: $alertItem) { alertItem in
+            Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
+        }
+        .onTapGesture {
+            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+        }
+        .ignoresSafeArea(isKeyboardHidden ? .keyboard : [])
     }
     
 }

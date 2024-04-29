@@ -20,6 +20,7 @@ struct MyDataTextField: View {
             TextField(placeholder, text: $text)
                 .padding(.horizontal, 15)
                 .foregroundColor(.textColour)
+                .keyboardType(.numberPad)
                 .textFieldStyle(PlainTextFieldStyle())
         }
     }
