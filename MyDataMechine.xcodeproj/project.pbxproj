@@ -8,17 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		8D72D3662BDFDF0C00A3D1F6 /* MyDataMechineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3652BDFDF0C00A3D1F6 /* MyDataMechineApp.swift */; };
-		8D72D3682BDFDF0C00A3D1F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3672BDFDF0C00A3D1F6 /* ContentView.swift */; };
+		8D72D3682BDFDF0C00A3D1F6 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3672BDFDF0C00A3D1F6 /* LandingPage.swift */; };
 		8D72D36A2BDFDF0D00A3D1F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D72D3692BDFDF0D00A3D1F6 /* Assets.xcassets */; };
 		8D72D36D2BDFDF0D00A3D1F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D72D36C2BDFDF0D00A3D1F6 /* Preview Assets.xcassets */; };
+		8D72D3752BDFE06200A3D1F6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3742BDFE06200A3D1F6 /* Model.swift */; };
+		8D72D3782BDFE4E300A3D1F6 /* BackGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3772BDFE4E200A3D1F6 /* BackGround.swift */; };
+		8D72D37A2BDFE5D100A3D1F6 /* MYDataHeadingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3792BDFE5D100A3D1F6 /* MYDataHeadingText.swift */; };
+		8D72D37C2BDFE6D900A3D1F6 /* DisplayIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D37B2BDFE6D900A3D1F6 /* DisplayIcon.swift */; };
+		8D72D37F2BDFE79A00A3D1F6 /* MyDataHintText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D37E2BDFE79A00A3D1F6 /* MyDataHintText.swift */; };
+		8D72D3832BDFE85000A3D1F6 /* MyDataButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3822BDFE85000A3D1F6 /* MyDataButton.swift */; };
+		8D72D3862BDFEC5600A3D1F6 /* MyDataTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D3852BDFEC5600A3D1F6 /* MyDataTextField.swift */; };
+		8D72D38E2BDFF02F00A3D1F6 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D38D2BDFF02F00A3D1F6 /* Posts.swift */; };
+		8D72D3902BDFF09900A3D1F6 /* MyDataBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72D38F2BDFF09900A3D1F6 /* MyDataBackButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8D72D3622BDFDF0C00A3D1F6 /* MyDataMechine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDataMechine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D72D3652BDFDF0C00A3D1F6 /* MyDataMechineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataMechineApp.swift; sourceTree = "<group>"; };
-		8D72D3672BDFDF0C00A3D1F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8D72D3672BDFDF0C00A3D1F6 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 		8D72D3692BDFDF0D00A3D1F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D72D36C2BDFDF0D00A3D1F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8D72D3742BDFE06200A3D1F6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8D72D3772BDFE4E200A3D1F6 /* BackGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackGround.swift; sourceTree = "<group>"; };
+		8D72D3792BDFE5D100A3D1F6 /* MYDataHeadingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYDataHeadingText.swift; sourceTree = "<group>"; };
+		8D72D37B2BDFE6D900A3D1F6 /* DisplayIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayIcon.swift; sourceTree = "<group>"; };
+		8D72D37E2BDFE79A00A3D1F6 /* MyDataHintText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataHintText.swift; sourceTree = "<group>"; };
+		8D72D3822BDFE85000A3D1F6 /* MyDataButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataButton.swift; sourceTree = "<group>"; };
+		8D72D3852BDFEC5600A3D1F6 /* MyDataTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataTextField.swift; sourceTree = "<group>"; };
+		8D72D38D2BDFF02F00A3D1F6 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		8D72D38F2BDFF09900A3D1F6 /* MyDataBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataBackButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +69,11 @@
 		8D72D3642BDFDF0C00A3D1F6 /* MyDataMechine */ = {
 			isa = PBXGroup;
 			children = (
+				8D72D3762BDFE4D600A3D1F6 /* Views */,
+				8D72D3732BDFE05400A3D1F6 /* Model */,
 				8D72D3652BDFDF0C00A3D1F6 /* MyDataMechineApp.swift */,
-				8D72D3672BDFDF0C00A3D1F6 /* ContentView.swift */,
+				8D72D3672BDFDF0C00A3D1F6 /* LandingPage.swift */,
+				8D72D38C2BDFF02100A3D1F6 /* Posts */,
 				8D72D3692BDFDF0D00A3D1F6 /* Assets.xcassets */,
 				8D72D36B2BDFDF0D00A3D1F6 /* Preview Content */,
 			);
@@ -65,6 +86,68 @@
 				8D72D36C2BDFDF0D00A3D1F6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8D72D3732BDFE05400A3D1F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D72D3742BDFE06200A3D1F6 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8D72D3762BDFE4D600A3D1F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D72D3842BDFEC4600A3D1F6 /* TextFieldStyle */,
+				8D72D3812BDFE83200A3D1F6 /* ImageStyle */,
+				8D72D3802BDFE82000A3D1F6 /* ButtonStyle */,
+				8D72D37D2BDFE76900A3D1F6 /* TextViews */,
+				8D72D3772BDFE4E200A3D1F6 /* BackGround.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D72D37D2BDFE76900A3D1F6 /* TextViews */ = {
+			isa = PBXGroup;
+			children = (
+				8D72D3792BDFE5D100A3D1F6 /* MYDataHeadingText.swift */,
+				8D72D37E2BDFE79A00A3D1F6 /* MyDataHintText.swift */,
+			);
+			path = TextViews;
+			sourceTree = "<group>";
+		};
+		8D72D3802BDFE82000A3D1F6 /* ButtonStyle */ = {
+			isa = PBXGroup;
+			children = (
+				8D72D3822BDFE85000A3D1F6 /* MyDataButton.swift */,
+				8D72D38F2BDFF09900A3D1F6 /* MyDataBackButton.swift */,
+			);
+			path = ButtonStyle;
+			sourceTree = "<group>";
+		};
+		8D72D3812BDFE83200A3D1F6 /* ImageStyle */ = {
+			isa = PBXGroup;
+			children = (
+				8D72D37B2BDFE6D900A3D1F6 /* DisplayIcon.swift */,
+			);
+			path = ImageStyle;
+			sourceTree = "<group>";
+		};
+		8D72D3842BDFEC4600A3D1F6 /* TextFieldStyle */ = {
+			isa = PBXGroup;
+			children = (
+				8D72D3852BDFEC5600A3D1F6 /* MyDataTextField.swift */,
+			);
+			path = TextFieldStyle;
+			sourceTree = "<group>";
+		};
+		8D72D38C2BDFF02100A3D1F6 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				8D72D38D2BDFF02F00A3D1F6 /* Posts.swift */,
+			);
+			path = Posts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +220,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D72D3682BDFDF0C00A3D1F6 /* ContentView.swift in Sources */,
+				8D72D3752BDFE06200A3D1F6 /* Model.swift in Sources */,
+				8D72D3832BDFE85000A3D1F6 /* MyDataButton.swift in Sources */,
+				8D72D3862BDFEC5600A3D1F6 /* MyDataTextField.swift in Sources */,
+				8D72D3902BDFF09900A3D1F6 /* MyDataBackButton.swift in Sources */,
+				8D72D37C2BDFE6D900A3D1F6 /* DisplayIcon.swift in Sources */,
+				8D72D37F2BDFE79A00A3D1F6 /* MyDataHintText.swift in Sources */,
+				8D72D3682BDFDF0C00A3D1F6 /* LandingPage.swift in Sources */,
 				8D72D3662BDFDF0C00A3D1F6 /* MyDataMechineApp.swift in Sources */,
+				8D72D38E2BDFF02F00A3D1F6 /* Posts.swift in Sources */,
+				8D72D3782BDFE4E300A3D1F6 /* BackGround.swift in Sources */,
+				8D72D37A2BDFE5D100A3D1F6 /* MYDataHeadingText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
